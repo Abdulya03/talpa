@@ -209,6 +209,9 @@
   .w-\[1\] {
     width: 1;
   }
+  .w-\[15\%\] {
+    width: 15%;
+  }
   .w-\[30\%\] {
     width: 30%;
   }
@@ -421,6 +424,11 @@
   .media\:w-\[\%\] {
     @media (width >= 500px) {
       width: %;
+    }
+  }
+  .media\:w-\[15\%\] {
+    @media (width >= 500px) {
+      width: 15%;
     }
   }
   .media\:w-\[18\%\] {
