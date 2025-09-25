@@ -7,6 +7,12 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-gray-100: oklch(96.7% 0.003 264.542);
+    --color-gray-200: oklch(92.8% 0.006 264.531);
+    --color-gray-300: oklch(87.2% 0.01 258.338);
+    --color-white: #fff;
+    --spacing: 0.25rem;
+    --radius-2xl: 1rem;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
   }
@@ -175,9 +181,6 @@
   .h-\[6px\] {
     height: 6px;
   }
-  .h-\[50\] {
-    height: 50;
-  }
   .h-\[50px\] {
     height: 50px;
   }
@@ -188,6 +191,9 @@
     width: 90%;
   }
   .w-\[100\%\] {
+    width: 100%;
+  }
+  .w-full {
     width: 100%;
   }
   .border-collapse {
@@ -202,6 +208,12 @@
   .justify-between {
     justify-content: space-between;
   }
+  .gap-3 {
+    gap: calc(var(--spacing) * 3);
+  }
+  .gap-4 {
+    gap: calc(var(--spacing) * 4);
+  }
   .gap-\[8px\] {
     gap: 8px;
   }
@@ -211,9 +223,16 @@
   .gap-\[40px\] {
     gap: 40px;
   }
+  .rounded-2xl {
+    border-radius: var(--radius-2xl);
+  }
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
+  }
+  .border-2 {
+    border-style: var(--tw-border-style);
+    border-width: 2px;
   }
   .border-t {
     border-top-style: var(--tw-border-style);
@@ -223,14 +242,39 @@
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 1px;
   }
+  .border-solid {
+    --tw-border-style: solid;
+    border-style: solid;
+  }
   .border-\[\#DADCDC\] {
     border-color: #DADCDC;
+  }
+  .border-gray-300 {
+    border-color: var(--color-gray-300);
   }
   .bg-\[\#F7F7F7\] {
     background-color: #F7F7F7;
   }
+  .bg-gray-100 {
+    background-color: var(--color-gray-100);
+  }
+  .bg-gray-200 {
+    background-color: var(--color-gray-200);
+  }
+  .bg-white {
+    background-color: var(--color-white);
+  }
   .bg-\[linear-gradient\(90deg\,\#00C65E_26\.28\%\,rgba\(0\,198\,94\,0\)_101\.66\%\)\] {
     background-image: linear-gradient(90deg,#00C65E 26.28%,rgba(0,198,94,0) 101.66%);
+  }
+  .p-\[10px\] {
+    padding: 10px;
+  }
+  .py-\[10px\] {
+    padding-block: 10px;
+  }
+  .text-\[\#00C65E\] {
+    color: #00C65E;
   }
   .underline {
     text-decoration-line: underline;
