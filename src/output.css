@@ -197,6 +197,9 @@
   .h-\[10px\] {
     height: 10px;
   }
+  .h-\[50px\] {
+    height: 50px;
+  }
   .w-3 {
     width: calc(var(--spacing) * 3);
   }
@@ -205,6 +208,9 @@
   }
   .w-10 {
     width: calc(var(--spacing) * 10);
+  }
+  .w-90 {
+    width: calc(var(--spacing) * 90);
   }
   .w-\[1\] {
     width: 1;
@@ -302,6 +308,9 @@
   .bg-\[\#CCEFDB\] {
     background-color: #CCEFDB;
   }
+  .bg-\[\#F7F7F7\] {
+    background-color: #F7F7F7;
+  }
   .bg-black {
     background-color: var(--color-black);
   }
@@ -323,6 +332,9 @@
   .p-\[20px\] {
     padding: 20px;
   }
+  .px-\[25px\] {
+    padding-inline: 25px;
+  }
   .py-15 {
     padding-block: calc(var(--spacing) * 15);
   }
@@ -331,6 +343,18 @@
   }
   .py-\[15px\] {
     padding-block: 15px;
+  }
+  .py-\[25\] {
+    padding-block: 25;
+  }
+  .py-\[25px\] {
+    padding-block: 25px;
+  }
+  .py-\[50px\] {
+    padding-block: 50px;
+  }
+  .py-\[100px\] {
+    padding-block: 100px;
   }
   .pl-3 {
     padding-left: calc(var(--spacing) * 3);
@@ -446,6 +470,11 @@
       width: 18^;
     }
   }
+  .media\:w-\[30\%\] {
+    @media (width >= 500px) {
+      width: 30%;
+    }
+  }
   .media\:w-\[40\%\] {
     @media (width >= 500px) {
       width: 40%;
@@ -469,6 +498,11 @@
   .media\:justify-between {
     @media (width >= 500px) {
       justify-content: space-between;
+    }
+  }
+  .media\:text-center {
+    @media (width >= 500px) {
+      text-align: center;
     }
   }
   .media\:text-start {
